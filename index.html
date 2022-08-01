@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>calcTip</title>
+</head>
+
+<body>
+
+    <main id="container">
+
+        <h1>TIP CALC</h1>
+
+        <section>
+            <!-- THE BILL  -->
+            <div class=" bill">
+                <label for="yourBill">Bill</label>
+                <input type="number" placeholder="Your Bill" id="yourBill">
+            </div>
+            <!-- SELCT TIP  -->
+            <div>
+                <div class="space-between">
+                    <label for="tipInput">Select Tip</label>
+                    <span id="tipPercent"></span>
+                </div>
+                <input type="range" value="0" id="tipInput" class="range">
+            </div>
+            <!-- TIP -->
+            <div class="space-between">
+                <span>Tip</span>
+                <span id="tipValue"></span>
+            </div>
+            <div>
+                <hr />
+            </div>
+            <!-- TOTAL -->
+            <div class="space-between total">
+                <span>Total</span>
+                <span id="totalWithTip"></span>
+            </div>
+        </section>
+
+        <section>
+            <!-- THE SPLIT SECTION  -->
+            <div>
+                <div class="space-between">
+                    <label for="splitInput">Split</label>
+                    <span id="splitValue">1 person</span>
+                </div>
+                <input type="range" min="1" max="10" value="1" id="splitInput" class="range">
+            </div>
+            <!-- HOW MUCH EACH PERSON NEED TO PAY -->
+            <div class="space-between">
+                <span>Bill each</span>
+                <span id="billEach"></span>
+            </div>
+            <!-- TIP FOR EACH PERSON -->
+            <div class="space-between">
+                <span>Tip each</span>
+                <span id="tipEach"></span>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
